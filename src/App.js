@@ -1,17 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-import Greet from './components/Greet';
-import Welcome from './components/Welcom';
-import Message from './components/Message';
-import Counter from './components/Counter';
-import FunctionClick from './components/FunctionClick';
-import ClassClick from './components/ClassClick';
-import EventBinding from './components/EventBinding';
-import ParentComponent from './components/ParentComponent';
-import UserGreeting from './components/UserGreeting';
-import NameList from './components/NameList';
-import Form from './components/Form';
-import LifecycleA from './components/LifecycleA';
+// import Greet from './components/Greet';
+// import Welcome from './components/Welcom';
+// import Message from './components/Message';
+// import Counter from './components/Counter';
+// import FunctionClick from './components/FunctionClick';
+// import ClassClick from './components/ClassClick';
+// import EventBinding from './components/EventBinding';
+// import ParentComponent from './components/ParentComponent';
+// import UserGreeting from './components/UserGreeting';
+// import NameList from './components/NameList';
+// import Form from './components/Form';
+// import LifecycleA from './components/LifecycleA';
+// import FragmentsDemo from './components/FragmentsDemo';
+// import Table from './components/Table';
+// import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
+import RefsDemo from './RefsDemo';
+import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
 
 function App() {
   return (
@@ -47,7 +54,19 @@ function App() {
 
       {/* <Form/> */}
 
-      <LifecycleA/>
+      {/* <LifecycleA/> */}
+
+      {/* <FragmentsDemo/> */}
+      
+      {/* <Table/> */}
+
+      {/* <ParentComp/> */}
+
+      {/* <RefsDemo/> */}
+
+      {/* <FocusInput/> */}
+
+      <FRParentInput/>
     </div>
   );
 }
