@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcom';
@@ -15,10 +15,13 @@ import './App.css';
 // import FragmentsDemo from './components/FragmentsDemo';
 // import Table from './components/Table';
 // import PureComp from './components/PureComp';
-import ParentComp from './components/ParentComp';
-import RefsDemo from './RefsDemo';
-import FocusInput from './components/FocusInput';
-import FRParentInput from './components/FRParentInput';
+// import ParentComp from './components/ParentComp';
+// import RefsDemo from './RefsDemo';
+// import FocusInput from './components/FocusInput';
+// import FRParentInput from './components/FRParentInput';
+// import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
@@ -66,7 +69,21 @@ function App() {
 
       {/* <FocusInput/> */}
 
-      <FRParentInput/>
+      {/* <FRParentInput/> */}
+
+      {/* <PortalDemo/> */}
+
+    <ErrorBoundary>
+      <Hero heroName='Batman'/>
+    </ErrorBoundary>
+
+    <ErrorBoundary>
+      <Hero heroName='Superman'/>
+    </ErrorBoundary>
+
+    <ErrorBoundary>
+      <Hero heroName='Joker'/>
+    </ErrorBoundary>
     </div>
   );
 }
