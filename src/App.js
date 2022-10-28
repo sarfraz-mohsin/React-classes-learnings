@@ -1,5 +1,9 @@
 // import logo from './logo.svg';
 import './App.css';
+import PostForm from './components/PostForm';
+import PostList from './components/PostList';
+// import ComponentC from './components/ComponentC';
+// import { UserProvider } from './components/userContext';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcom';
 // import Message from './components/Message';
@@ -20,8 +24,14 @@ import './App.css';
 // import FocusInput from './components/FocusInput';
 // import FRParentInput from './components/FRParentInput';
 // import PortalDemo from './components/PortalDemo';
-import Hero from './components/Hero';
-import ErrorBoundary from './components/ErrorBoundary';
+// import Hero from './components/Hero';
+// import ErrorBoundary from './components/ErrorBoundary';
+// import ClickCounter from './components/ClickCounter';
+// import HoverCounter from './components/HoverCounter';
+// import ClickCounter2 from './components/ClickCounter2';
+// import CounterTwo from './components/CounterTwo';
+// import HoverCounterTwo from './components/HoverCounterTwo';
+// import User from './components/User';
 
 function App() {
   return (
@@ -73,7 +83,7 @@ function App() {
 
       {/* <PortalDemo/> */}
 
-    <ErrorBoundary>
+    {/* <ErrorBoundary>
       <Hero heroName='Batman'/>
     </ErrorBoundary>
 
@@ -83,7 +93,29 @@ function App() {
 
     <ErrorBoundary>
       <Hero heroName='Joker'/>
-    </ErrorBoundary>
+    </ErrorBoundary> */}
+
+    {/* <ClickCounter name='Sarfraz'/>
+    <HoverCounter/> */}
+
+    {/* <ClickCounter2/>
+    <HoverCounterTwo/>
+    <User render={(isLoggedIn) => isLoggedIn ? 'sarfraz' : 'guest'}/> */}
+
+    {/* <CounterTwo render={(count, incrementCounter) => (
+      <ClickCounter2 count ={count} incrementCounter ={incrementCounter}/>
+    )}/>
+     <CounterTwo render={(count, incrementCounter) => (
+      <HoverCounterTwo count ={count} incrementCounter ={incrementCounter}/>
+    )}/> */}
+    
+    {/* <UserProvider value="Sarfraz">
+      <ComponentC/>
+    </UserProvider> */}
+
+    {/* <PostList/> */}
+
+    <PostForm/>
     </div>
   );
 }
